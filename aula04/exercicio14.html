@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Décimo Quarto exercício</title>
+</head>
+<body>
+    <script>
+        var valor = parseInt(prompt("Digite o valor para o saque:"));
+        var notas = [100, 50, 20, 10, 5, 2, 1];
+
+        for (var nota of notas) {
+            var quantidade = parseInt(valor / nota); // Divisão inteira
+            if (quantidade > 0) {
+                console.log(quantidade + " nota(s) de R$ " + nota);
+                valor %= nota;
+            }
+        }
+    </script>
+</body>
+</html>
