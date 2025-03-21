@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oitavo exercício</title>
+</head>
+<body>
+    <script>
+        var logincerto = "oi";
+        var senhacerta = "io";
+
+        var login = prompt("Digite seu login");
+        var senha = prompt("Digite sua senha");
+
+        // Usando "&&" para garantir que ambos (login e senha) sejam corretos
+        while (login != logincerto || senha != senhacerta) {
+            alert("Nome de usuário e/ou senha incorretos. Tente novamente.");
+            login = prompt("Digite o nome de usuário:");
+            senha = prompt("Digite a senha:");
+        }
+
+        alert("Login bem-sucedido!");
+    </script>
+</body>
+</html>
+

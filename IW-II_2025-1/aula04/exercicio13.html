@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Décimo terceiro exercício</title>
+</head>
+<body>
+    <script>
+        var n1 = parseFloat(prompt("Digite sua primeira nota"));
+        var n2 = parseFloat(prompt("Digite sua segunda nota"));
+        var n3 = parseFloat(prompt("Digite sua terceira nota"));
+
+        // Calculando a média
+        var media = (n1 + n2 + n3) / 3;
+
+        // Verificando se o aluno está aprovado ou reprovado
+        if (media >= 7) {
+            alert("Sua média é " + media + ". Você está aprovado!");
+        } else {
+            alert("Sua média é " + media + ". Você está reprovado!");
+        }
+    </script>
+</body>
+</html>

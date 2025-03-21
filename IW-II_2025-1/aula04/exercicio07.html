@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setimo Exercício</title>
+</head>
+<body>
+    <script>
+        var numero = parseInt(prompt("Digite um número para verificar se é primo:"));
+
+        if (numero > 1) {
+            var Primo = true;
+            for (var i = 2; i < numero; i++) {
+                if (numero % i == 0) {
+                    Primo = false;
+                    break;
+                }
+            }
+            if (Primo) {
+                alert(numero + " é um número primo.");
+            } else {
+                alert(numero + " não é um número primo.");
+            }
+        } else {
+            alert("Por favor, digite um número válido maior que 1.");
+        }
+    </script>
+</body>
+</html>

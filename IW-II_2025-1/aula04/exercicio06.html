@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexto Exercício</title>
+</head>
+<body>
+    <script>
+        var numero = parseInt(prompt("Digite um número para somar todos os números de 1 até ele:"));
+
+        if (numero > 0) {
+            var soma = 0;
+            for (var i = 1; i <= numero; i++) {
+                soma = soma + i;
+            }
+            alert("A soma de todos os números de 1 até " + numero + " é: " + soma);
+        } else {
+            alert("Por favor, digite um número válido.");
+        }
+    </script>
+</body>
+</html>
+
