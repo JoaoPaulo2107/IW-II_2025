@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média da Lista</title>
+    <script>
+        function mediaLista(numeros) {
+            let soma = 0;
+            for (let num of numeros) {
+                soma =soma + num;
+            }
+            return soma / numeros.length;
+        }
+        alert(mediaLista([10, 20, 30, 40 , 100]));
+    </script>
+</head>
+<body>
+</body>
+</html>
