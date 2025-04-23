@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <title>Simulador de Lâmpada</title>
+ <style>
+ body {
+   text-align: center;
+   font-family: Arial, sans-serif;
+   margin-top: 50px;
+ }
+ img {
+   width: 200px;
+   margin-bottom: 20px;
+   cursor: pointer;
+ }
+ button {
+   padding: 10px 20px;
+   margin: 5px;
+   font-size: 16px;
+   cursor: pointer;
+   border: none;
+   border-radius: 5px;
+ }
+ #ligar {
+   background-color: #28a745;
+   color: white;
+ }
+ #desligar {
+   background-color: #dc3545;
+   color: white;
+ }
+ #status {
+   margin-top: 20px;
+   font-weight: bold;
+   font-size: 18px;
+ }
+ </style>
+</head>
+<body>
+ <h1>Simulador de Lâmpada</h1>
+ <img id="lampada" src="img/lampada desligada.jpg" alt="Lâmpada Desligada">
+ <div>
+   <button id="ligar">Ligar</button>
+   <button id="desligar" disabled>Desligar</button>
+ </div>
+ <p id="status">A lâmpada está desligada.</p>
+ <script src="script.js"></script>
+</body>
+</html>
