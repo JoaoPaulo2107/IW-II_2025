@@ -3,20 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 03</title>
-
-    <script>
-        var num= 10;
-        num= 5;
-        console.log(num);
-
-
-    </script>
+    <title>Calculadora Simples</title>
+    <style>
+        #resultado {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <head>
-    <h1>Váriaveis:let,var e const,</h1>
+    <input type="number" id="n1" placeholder="Digite o primeiro número">
+    <input type="number" id="n2" placeholder="Digite o segundo número">
+    
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    <button onclick="limpar()">Limpar</button>
 
-    </head>
+    <hr>
+    <p>O resultado é: <span id="resultado"></span></p>
+
+    <script>
+        function somar(){
+            var num1 = parseFloat(document.getElementById("n1").value);
+            var num2 = parseFloat(document.getElementById("n2").value);
+            document.getElementById("resultado").innerText = num1 + num2;
+        }
+
+        function subtrair(){
+            var num1 = parseFloat(document.getElementById("n1").value);
+            var num2 = parseFloat(document.getElementById("n2").value);
+            document.getElementById("resultado").innerText = num1 - num2;
+        }
+
+        function multiplicar(){
+            var num1 = parseFloat(document.getElementById("n1").value);
+            var num2 = parseFloat(document.getElementById("n2").value);
+            document.getElementById("resultado").innerText = num1 * num2;
+        }
+
+        function dividir(){
+            var num1 = parseFloat(document.getElementById("n1").value);
+            var num2 = parseFloat(document.getElementById("n2").value);
+            var resultado = document.getElementById("resultado");
+
+            if(num2 === 0){
+                resultado.innerHTML = "<b style='color:red'>Não é permitido dividir por 0</b>";
+            } else {
+                resultado.innerText = num1 / num2;
+            }
+        }
+
+        function limpar(){
+            document.getElementById("n1").value = "";
+            document.getElementById("n2").value = "";
+            document.getElementById("resultado").innerText = "";
+        }
+    </script>
 </body>
-</html>   
+</html>
