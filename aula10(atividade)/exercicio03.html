@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Evento limitado</title>
+</head>
+<body>
+
+  <input type="text" id="meuInput" placeholder="Digite algo">
+  <button id="botao">Mostrar valor</button>
+
+  <script>
+    let ultimoValor = "";
+    const input = document.getElementById("meuInput");
+    const botao = document.getElementById("botao");
+
+   
+    botao.addEventListener("click", function () {
+      const valorAtual = input.value; 
+
+      if (valorAtual !== "" && valorAtual !== ultimoValor) {
+        alert("Valor do input: " + valorAtual);
+        ultimoValor = valorAtual; 
+      }
+    });
+  </script>
+
+</body>
+</html>

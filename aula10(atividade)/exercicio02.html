@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmação com Botão</title>
+</head>
+<body>
+
+  <button onclick="confirmar()">Clique aqui</button>
+
+  <script>
+    function confirmar() {
+      let resposta = confirm("Você tem certeza que deseja realizar essa ação?");
+
+      if (resposta) {
+        alert("Ação confirmada!");
+      } else {
+        alert("Ação recusada!");
+      }
+    }
+  </script>
+
+</body>
+</html>
